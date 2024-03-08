@@ -17,15 +17,11 @@ $palettes: (
   "rose": matx.$m3-rose-palette,
 );
 
-$themes: ("dark", "light");
-
 $theme-map: ();
 
-@each $color, $palette in $palettes {
-  @each $theme in $themes {
+@each $theme in ("dark", "light") {
+  @each $color, $palette in $palettes {
     $theme-name: "m3-#{$color}-#{$theme}-theme";
-    $theme-type: $theme;
-
     $theme-map: map.merge(
       $theme-map,
       (
@@ -33,7 +29,7 @@ $theme-map: ();
           matx.define-theme(
             (
               color: (
-                theme-type: $theme-type,
+                theme-type: $theme,
                 primary: $palette,
               ),
             )
