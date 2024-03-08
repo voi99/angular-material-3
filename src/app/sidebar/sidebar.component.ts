@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { MatNavList, MatListItem } from "@angular/material/list";
 import { SIDEBAR_LINKS } from "./sidebar-options";
 import { RouterLink, RouterLinkActive } from "@angular/router";
+import { QuicklinkDirective } from "ngx-quicklink";
 
 @Component({
   selector: "app-sidebar",
@@ -20,7 +21,7 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
       margin-bottom: 0.35rem;
     }
   `,
-  imports: [MatNavList, MatListItem, RouterLink, RouterLinkActive],
+  imports: [MatNavList, MatListItem, RouterLink, RouterLinkActive, QuicklinkDirective],
 })
 export class SidebarComponent {
   sidebarLinks = SIDEBAR_LINKS;
