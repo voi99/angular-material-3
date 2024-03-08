@@ -32,7 +32,6 @@ import { SectionComponent } from "../../section/section.component";
       </mat-accordion>
     </app-section>
   `,
-
   imports: [
     MatAccordion,
     MatExpansionPanel,

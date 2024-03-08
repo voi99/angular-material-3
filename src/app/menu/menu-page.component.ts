@@ -12,7 +12,6 @@ import { NestedMenuComponent } from "./nested-menu/nested-menu.component";
       <app-nested-menu />
     </div>
   `,
-
   standalone: true,
   imports: [BasicMenuComponent, MenuWithIconsComponent, NestedMenuComponent],
 })

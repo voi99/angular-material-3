@@ -23,7 +23,6 @@ export interface Vegetable {
       </mat-chip-set>
     </app-section>
   `,
-
   imports: [MatChipSet, MatChip, CdkDropList, CdkDrag, SectionComponent],
 })
 export class ChipsDragAndDropComponent {

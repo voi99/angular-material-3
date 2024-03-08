@@ -12,7 +12,6 @@ import { CdkExpansionPanelComponent } from "./cdk-expansion-panel/cdk-expansion-
       <app-cdk-expansion-panel />
     </div>
   `,
-
   imports: [BasicExpansionPanelComponent, CdkExpansionPanelComponent],
 })
 export default class ExpansionPanelPageComponent {

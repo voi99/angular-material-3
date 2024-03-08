@@ -12,7 +12,6 @@ import { ChipsAutocompleteComponent } from "./chips-autocomplete/chips-autocompl
     <app-chips-drag-and-drop />
     <app-chips-autocomplete />
   </div>`,
-
   standalone: true,
   imports: [ChipsAvatarComponent, BasicChipsComponent, ChipsDragAndDropComponent, ChipsAutocompleteComponent],
 })

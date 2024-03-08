@@ -12,7 +12,6 @@ import { ScrollableDialogComponent } from "./scrollable-dialog/scrollable-dialog
       <button mat-button (click)="openScrollableDialog()">Open Scrollable Dialog</button>
     </div>
   `,
-
   standalone: true,
   imports: [BasicDialogComponent, MatButton],
 })

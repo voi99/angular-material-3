@@ -15,7 +15,6 @@ import { SectionComponent } from "../../section/section.component";
       </mat-menu>
     </app-section>
   `,
-
   imports: [MatButton, MatMenu, MatMenuItem, MatMenuTrigger, SectionComponent],
 })
 export class BasicMenuComponent {}

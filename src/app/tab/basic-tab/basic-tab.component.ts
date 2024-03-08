@@ -14,7 +14,6 @@ import { MatTabGroup, MatTab } from "@angular/material/tabs";
       </mat-tab-group>
     </app-section>
   `,
-
   imports: [SectionComponent, MatTabGroup, MatTab],
 })
 export class BasicTabComponent {}

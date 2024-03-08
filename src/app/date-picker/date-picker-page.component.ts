@@ -13,7 +13,6 @@ import { RangeDatepickerComponent } from "./range-datepicker/range-datepicker.co
       <app-range-datepicker />
     </div>
   `,
-
   imports: [BasicDatepickerComponent, AppearanceToggleComponent, RangeDatepickerComponent],
 })
 export default class DatePickerPageComponent {}

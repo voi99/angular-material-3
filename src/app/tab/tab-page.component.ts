@@ -11,7 +11,6 @@ import { TabWithIconComponent } from "./tab-with-icon/tab-with-icon.component";
       <app-tab-with-icon />
     </div>
   `,
-
   imports: [BasicTabComponent, TabWithIconComponent],
 })
 export default class TabPageComponent {}

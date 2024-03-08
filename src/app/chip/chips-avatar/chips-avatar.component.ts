@@ -32,7 +32,6 @@ import { MatChip, MatChipAvatar, MatChipSet } from "@angular/material/chips";
       </mat-chip-set>
     </app-section>
   `,
-
   imports: [SectionComponent, MatChip, MatChipSet, MatChipAvatar],
 })
 export class ChipsAvatarComponent {}

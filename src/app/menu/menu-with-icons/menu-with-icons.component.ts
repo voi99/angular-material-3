@@ -28,7 +28,6 @@ import { MatIcon } from "@angular/material/icon";
       </mat-menu>
     </app-section>
   `,
-
   imports: [MatIconButton, MatMenu, MatMenuItem, MatMenuTrigger, MatIcon, SectionComponent],
 })
 export class MenuWithIconsComponent {}
