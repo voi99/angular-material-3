@@ -8,7 +8,7 @@ import { NgOptimizedImage } from "@angular/common";
     <nav>
       <div class="title">
         <img ngSrc="/assets/images/angular-logo.svg" alt="Angular Logo" height="26" width="26" priority />
-        <span>Angular Material 3</span>
+        <span>Material 3</span>
       </div>
       <app-theme-toggle />
     </nav>
