@@ -5,9 +5,11 @@ import {
   MatExpansionPanelHeader,
   MatExpansionPanelDescription,
   MatExpansionPanelTitle,
+  MatExpansionPanelActionRow,
   MatAccordionDisplayMode,
 } from "@angular/material/expansion";
 import { SectionComponent } from "../../section/section.component";
+import { MatButton } from "@angular/material/button";
 
 @Component({
   selector: "app-basic-expansion-panel",
@@ -17,17 +19,30 @@ import { SectionComponent } from "../../section/section.component";
       <mat-accordion [displayMode]="mode()">
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
-            <mat-panel-title> This is the expansion title </mat-panel-title>
-            <mat-panel-description> This is a summary of the content </mat-panel-description>
+            <mat-panel-title> Title </mat-panel-title>
+            <mat-panel-description> Description </mat-panel-description>
           </mat-expansion-panel-header>
-          <p>This is the primary content of the panel.</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, numquam? Voluptatem beatae magnam
+            excepturi adipisci ducimus quidem quae tempore itaque error, alias laboriosam necessitatibus aperiam id cum
+            repellendus blanditiis impedit?
+          </p>
         </mat-expansion-panel>
-        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" #panel>
           <mat-expansion-panel-header>
-            <mat-panel-title> Self aware panel </mat-panel-title>
-            <mat-panel-description> Currently I am {{ panelOpenState() ? "open" : "closed" }} </mat-panel-description>
+            <mat-panel-title> Title </mat-panel-title>
+            <mat-panel-description> {{ panelOpenState() ? "Open" : "Closed" }} </mat-panel-description>
           </mat-expansion-panel-header>
-          <p>I'm visible because I am open</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, numquam? Voluptatem beatae magnam
+            excepturi adipisci ducimus quidem quae tempore itaque error, alias laboriosam necessitatibus aperiam id cum
+            repellendus blanditiis impedit?
+          </p>
+          <mat-action-row>
+            <button mat-button (click)="panel.close()">Cancel</button>
+            <button mat-button (click)="panel.close()">Save</button>
+          </mat-action-row>
         </mat-expansion-panel>
       </mat-accordion>
     </app-section>
@@ -38,6 +53,8 @@ import { SectionComponent } from "../../section/section.component";
     MatExpansionPanelHeader,
     MatExpansionPanelDescription,
     MatExpansionPanelTitle,
+    MatExpansionPanelActionRow,
+    MatButton,
     SectionComponent,
   ],
 })
