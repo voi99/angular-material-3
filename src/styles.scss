@@ -73,6 +73,11 @@ $m3-violet-light-theme: matx.define-theme(
     border-radius: 12px;
     overflow: hidden;
   }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: mat.get-theme-color($theme, secondary-container) transparent;
+  }
 }
 
 html {
@@ -128,8 +133,4 @@ body {
 mat-form-field {
   width: 100%;
   max-width: 400px;
-}
-
-* {
-  scrollbar-width: thin;
 }
