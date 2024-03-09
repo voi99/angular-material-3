@@ -8,7 +8,7 @@ import { MatSnackBarAction, MatSnackBarActions, MatSnackBarLabel, MatSnackBarRef
   standalone: true,
   imports: [MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction, MatButton, MatIcon],
   template: `
-    <span class="example-pizza-party" matSnackBarLabel>Angular Material 3 </span>
+    <span matSnackBarLabel>Angular Material 3 </span>
     <span matSnackBarActions>
       <button mat-button matSnackBarAction (click)="snackBarRef.dismissWithAction()">
         <mat-icon> celebration </mat-icon>

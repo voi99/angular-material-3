@@ -12,13 +12,9 @@ export interface Vegetable {
   standalone: true,
   template: `
     <app-section title="Chips Drag and Drop">
-      <mat-chip-set
-        class="example-chip"
-        cdkDropList
-        cdkDropListOrientation="horizontal"
-        (cdkDropListDropped)="drop($event)">
+      <mat-chip-set cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)">
         @for (vegetable of vegetables; track vegetable) {
-          <mat-chip class="example-box" cdkDrag>{{ vegetable.name }}</mat-chip>
+          <mat-chip cdkDrag>{{ vegetable.name }}</mat-chip>
         }
       </mat-chip-set>
     </app-section>

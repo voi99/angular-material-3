@@ -74,7 +74,7 @@ import { SectionComponent } from "../../section/section.component";
 
     .example-accordion-item-header:hover {
       cursor: pointer;
-      background-color: #eeeeee7d;
+      background-color: #eeeeee5b;
     }
 
     .example-accordion-item:first-child {
