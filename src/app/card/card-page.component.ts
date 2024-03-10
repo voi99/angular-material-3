@@ -17,6 +17,7 @@ import { CardFilledComponent } from "./card-filled/card-filled.component";
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.85rem;
+      max-width: 1280px;
 
       @media (min-width: 640px) {
         grid-template-columns: repeat(2, 1fr);

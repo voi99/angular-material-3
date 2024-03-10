@@ -13,6 +13,15 @@ import { MatIconButton } from "@angular/material/button";
         <button mat-icon-button>
           <mat-icon>light_mode</mat-icon>
         </button>
+        <button mat-icon-button>
+          <mat-icon class="primary-icon">light_mode</mat-icon>
+        </button>
+        <button mat-icon-button class="secondary-icon">
+          <mat-icon>light_mode</mat-icon>
+        </button>
+        <button mat-icon-button class="warn-icon">
+          <mat-icon>light_mode</mat-icon>
+        </button>
         <button mat-icon-button class="tonal">
           <mat-icon>dark_mode</mat-icon>
         </button>
