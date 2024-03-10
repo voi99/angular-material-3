@@ -31,6 +31,7 @@ import { MatIcon } from "@angular/material/icon";
           <button mat-stroked-button class="warn-button">Warn Stroked</button>
         </div>
         <div class="flex-wrapper">
+          <button mat-button class="tonal">Tonal</button>
           <button mat-stroked-button class="tonal">Tonal Stroked</button>
           <button mat-flat-button class="tonal">Tonal Flat</button>
           <button mat-raised-button class="tonal">Tonal Raised</button>

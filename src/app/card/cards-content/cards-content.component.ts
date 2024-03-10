@@ -10,7 +10,6 @@ import {
 } from "@angular/material/card";
 import { MatButton } from "@angular/material/button";
 import { NgOptimizedImage } from "@angular/common";
-import { MatChip, MatChipSet } from "@angular/material/chips";
 import { MatIcon } from "@angular/material/icon";
 
 @Component({
@@ -26,8 +25,6 @@ import { MatIcon } from "@angular/material/icon";
     MatCardSubtitle,
     MatCardImage,
     NgOptimizedImage,
-    MatChip,
-    MatChipSet,
     MatIcon,
   ],
   template: `
