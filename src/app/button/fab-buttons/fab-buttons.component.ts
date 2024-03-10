@@ -13,6 +13,10 @@ import { MatIcon } from "@angular/material/icon";
         <button mat-fab>
           <mat-icon>light_mode</mat-icon>
         </button>
+        <button mat-fab extended>
+          <mat-icon>navigation</mat-icon>
+          Navigate
+        </button>
         <button mat-mini-fab>
           <mat-icon>light_mode</mat-icon>
         </button>
