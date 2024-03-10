@@ -7,8 +7,8 @@ import { CardFilledComponent } from "./card-filled/card-filled.component";
   selector: "app-card-page",
   template: `
     <div class="cards-wrapper">
-      <app-card-filled />
       <app-card-outlined />
+      <app-card-filled />
       <app-card-elevated />
     </div>
   `,
