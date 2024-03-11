@@ -8,7 +8,7 @@ import { MatTooltip } from "@angular/material/tooltip";
 @Component({
   selector: "app-theme-toggle",
   template: `
-    <button mat-icon-button (click)="openThemePicker()" matTooltip="Theme Palette Picker">
+    <button mat-icon-button (click)="openThemePicker()" matTooltip="Themes">
       <mat-icon> palette </mat-icon>
     </button>
   `,

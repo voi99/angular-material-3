@@ -9,7 +9,7 @@ import { MatIcon } from "@angular/material/icon";
 @Component({
   selector: "app-theme-picker-dialog",
   template: `
-    <h2 mat-dialog-title>Theme Palette Picker</h2>
+    <h2 mat-dialog-title>Themes</h2>
 
     <mat-dialog-content>
       <div class="theme-options">
@@ -46,7 +46,6 @@ import { MatIcon } from "@angular/material/icon";
       display: flex;
       gap: 0.5rem;
       flex-direction: column;
-      padding: 1rem 0 0.5rem;
     }
 
     .grid {
