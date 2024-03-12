@@ -19,6 +19,8 @@ $palettes: (
 
 $theme-map: ();
 
+// generates theme variables for each color and theme type combination and merges them into $theme-map
+// output: $theme-map contains mappings of theme names to color themes for each palette in both dark and light modes
 @each $theme in ("dark", "light") {
   @each $color, $palette in $palettes {
     $theme-name: "m3-#{$color}-#{$theme}-theme";
@@ -39,18 +41,22 @@ $theme-map: ();
   }
 }
 
+// default theme (dark)
 $m3-violet-dark-theme: matx.define-theme(
   (
     color: (
       theme-type: dark,
       primary: matx.$m3-violet-palette,
     ),
-    density: (
-      scale: -1,
-    ),
+    // add density only for default theme config to avoid duplicated theming styles
+    density:
+      (
+        scale: -1,
+      ),
   )
 );
 
+// default light theme
 $m3-violet-light-theme: matx.define-theme(
   (
     color: (
