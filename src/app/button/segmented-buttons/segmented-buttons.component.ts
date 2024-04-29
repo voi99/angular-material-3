@@ -25,7 +25,10 @@ import { MatButtonToggle, MatButtonToggleGroup } from "@angular/material/button-
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
-      width: fit-content;
+
+      mat-button-toggle-group {
+        width: fit-content;
+      }
     }
   `,
 })
