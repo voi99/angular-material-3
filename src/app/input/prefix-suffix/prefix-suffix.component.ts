@@ -19,7 +19,7 @@ import { InputsAppearanceService } from "../appearance.service";
         matSuffix
         (click)="toggleHide()"
         [attr.aria-label]="'Hide password'"
-        [attr.aria-pressed]="hide">
+        [attr.aria-pressed]="hide()">
         <mat-icon>{{ hide() ? "visibility_off" : "visibility" }}</mat-icon>
       </button>
     </mat-form-field>
